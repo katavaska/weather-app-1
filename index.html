@@ -11,6 +11,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app-1</title>
   </head>
   <body>
@@ -23,17 +24,26 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <h1>15 °С | °F</h1>
-            <h4>wind 1 km/h</h4>
-            <h4>humidity 40%</h4>
+            <h1>
+              <span>15</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |<a
+                  href="#"
+                  id="fahrenheit-link"
+                  >°F
+                </a></span
+              >
+            </h1>
+            <h4>wind: 1 km/h</h4>
+            <h4>humidity: 40%</h4>
             <h4>clear</h4>
           </div>
           <div class="col-6">
             <div class="row">
               <div class="col-6">
-                <span>🌦</span>
+                <span class="icon">🌦</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-end">
                 <h4>Sunday</h4>
                 <h4>19 June</h4>
                 <h4>23:45</h4>
