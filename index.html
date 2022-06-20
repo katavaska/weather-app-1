@@ -17,59 +17,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="text"
-                placeholder="Type a city..."
-                class="form-control"
-                id="city-input"
-              />
-            </div>
-            <div class="col-2">
-              <input type="submit" value="search" class="btn btn-primary" />
-            </div>
-          </div>
-        </form>
-        <div class="row">
-          <div class="col text-end">
-            <h2 id="city"></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <h1>
-              <span id="temperature"></span>
-              <span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a> |<a
-                  href="#"
-                  id="fahrenheit-link"
-                  >°F
-                </a></span
-              >
-            </h1>
-            <h4>wind: <span id="wind"></span> km/h</h4>
-            <h4>humidity: <span id="humidity"></span>%</h4>
-            <h4 id="description">clear</h4>
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form">
             <div class="row">
               <div class="col-6">
-                <span class="icon" id="icon">🌦</span>
+                <input
+                  type="text"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                />
               </div>
-              <div class="col-6 text-end">
-                <h4 id="current-day"></h4>
-                <h4>
-                  <span id="current-date"></span>
-                  <span id="current-month"></span>
-                </h4>
-                <h4 id="time"></h4>
+              <div class="col-2">
+                <input type="submit" value="search" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col text-end">
+              <h2 id="city"></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h1>
+                <span id="temperature"></span>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |<a
+                    href="#"
+                    id="fahrenheit-link"
+                    >°F
+                  </a></span
+                >
+              </h1>
+              <h4>wind: <span id="wind"></span> km/h</h4>
+              <h4>humidity: <span id="humidity"></span>%</h4>
+              <h4 id="description">clear</h4>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <span class="icon" id="icon">🌦</span>
+                </div>
+                <div class="col-6 text-end">
+                  <h4 id="current-day"></h4>
+                  <h4>
+                    <span id="current-date"></span>
+                    <span id="current-month"></span>
+                  </h4>
+                  <h4 id="time"></h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <small>
+          <a href="https://github.com/katavaska/weather-app-1" target="_blank"
+            >Open-source code </a
+          >, by katavaska
+        </small>
       </div>
     </div>
   </body>
