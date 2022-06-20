@@ -11,13 +11,14 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app-1</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
-        <form>
+        <form id="search-form">
           <div class="row">
             <div class="col-6">
               <input
@@ -34,13 +35,13 @@
         </form>
         <div class="row">
           <div class="col text-end">
-            <h2>Kyiv</h2>
+            <h2 id="city">Kyiv</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <h1>
-              <span>15</span>
+              <span id="temperature">15</span>
               <span class="units">
                 <a href="#" id="celsius-link">°C</a> |<a
                   href="#"
@@ -49,19 +50,22 @@
                 </a></span
               >
             </h1>
-            <h4>wind: 1 km/h</h4>
-            <h4>humidity: 40%</h4>
-            <h4>clear</h4>
+            <h4>wind: <span id="wind"></span> km/h</h4>
+            <h4>humidity: <span id="humidity"></span>%</h4>
+            <h4 id="description">clear</h4>
           </div>
           <div class="col-6">
             <div class="row">
               <div class="col-6">
-                <span class="icon">🌦</span>
+                <span class="icon" id="icon">🌦</span>
               </div>
               <div class="col-6 text-end">
-                <h4>Sunday</h4>
-                <h4>19 June</h4>
-                <h4>23:45</h4>
+                <h4 id="current-day">Sunday</h4>
+                <h4>
+                  <span id="current-date">19</span>
+                  <span id="current-month">June</span>
+                </h4>
+                <h4 id="time">23:45</h4>
               </div>
             </div>
           </div>
@@ -69,4 +73,5 @@
       </div>
     </div>
   </body>
+  <script src="src/app.js"></script>
 </html>
