@@ -47,3 +47,16 @@ a {
 .icon {
   font-size: 72px;
 }
+
+.form-control {
+  border: 2px solid #9ba6df;
+  color: #9ba6df;
+}
+
+.btn-primary {
+  background: #006ec5;
+}
+
+.btn-primary:hover {
+  background: #9ba6df;
+}
