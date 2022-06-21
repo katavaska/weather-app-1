@@ -46,13 +46,13 @@ a.active {
 }
 
 .units {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
   bottom: 30px;
 }
 
 .icon {
-  font-size: 72px;
+  width: 130px;
 }
 
 .form-control {
